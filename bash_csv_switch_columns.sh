@@ -48,7 +48,7 @@ MSG_TRY="${COLOR_CYAN}TRY  ${COLOR_RESET}"
 
 JOB_NAME="$(basename "$0")"
 JOB_NAME="${JOB_NAME#./}"
-# JOB_VERSION="0.1.20250115T151000"
+# JOB_VERSION="0.1.20250115T154000"
 CSVFILE_DEFAULT="words_to_replace.csv"
 TEMP_FILE="_temp.csv"
 
@@ -94,12 +94,12 @@ function _print() {
 function _printok () {
   # local text=$1
   local text="${CR}"
-  _print "${text}${STYLE_SUCCESS}OK " "{STYLE_SUCCESS}"
+  _print "${text}${STYLE_SUCCESS}OK "
 }
 
 function _printdone() {
   local text="${CR}"
-  _print "${text}${STYLE_SUCCESS}DONE " "{STYLE_SUCCESS}"
+  _print "${text}${STYLE_SUCCESS}DONE "
 }
 
 # * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
